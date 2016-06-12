@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITextViewDelegate>
 
+@property (nonatomic, retain) UITextView *tweetText;
+@property (nonatomic, retain) UILabel *titleLabel;
+@property (nonatomic, retain) UILabel *characterCount;
 
+@property (nonatomic) long userNameCharacterCount;
 @end
 
