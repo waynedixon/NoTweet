@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="16A201w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,23 +16,21 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Tweet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfo-KS-oG0">
-                                <rect key="frame" x="264" y="20" width="73" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Bw-da-J2N">
-                                <rect key="frame" x="477" y="49" width="103" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="103" id="Yxg-cS-vO4"/>
                                     <constraint firstAttribute="width" constant="103" id="xRQ-8z-goM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -46,14 +45,13 @@
                                 </variation>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jKZ-dr-3zv">
-                                <rect key="frame" x="0.0" y="78" width="600" height="502"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jKZ-dr-3zv" firstAttribute="top" secondItem="6Bw-da-J2N" secondAttribute="bottom" constant="30" id="3Yf-Ma-NVu"/>
                             <constraint firstItem="gfo-KS-oG0" firstAttribute="centerX" secondItem="jKZ-dr-3zv" secondAttribute="centerX" id="DUf-pD-d0S"/>
@@ -76,32 +74,32 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="X4E-tT-EJb"/>
+                                <exclude reference="ebl-kS-Vu6"/>
+                                <exclude reference="DUf-pD-d0S"/>
+                                <exclude reference="hA0-PZ-gVT"/>
                                 <exclude reference="3Yf-Ma-NVu"/>
                                 <exclude reference="tjp-hq-Ose"/>
                                 <exclude reference="zEw-Oo-zYN"/>
-                                <exclude reference="DUf-pD-d0S"/>
-                                <exclude reference="hA0-PZ-gVT"/>
-                                <exclude reference="X4E-tT-EJb"/>
-                                <exclude reference="ebl-kS-Vu6"/>
                                 <exclude reference="GeA-7Q-L5a"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
                             <mask key="constraints">
+                                <exclude reference="JIb-F7-Xwn"/>
+                                <include reference="X4E-tT-EJb"/>
+                                <exclude reference="Xu0-0q-uUt"/>
+                                <include reference="ebl-kS-Vu6"/>
+                                <include reference="DUf-pD-d0S"/>
+                                <exclude reference="Xht-Hh-lkX"/>
+                                <include reference="hA0-PZ-gVT"/>
+                                <exclude reference="y5U-oX-NUI"/>
                                 <include reference="3Yf-Ma-NVu"/>
                                 <exclude reference="MiK-dh-MpF"/>
                                 <exclude reference="Q6i-pq-8aZ"/>
                                 <include reference="tjp-hq-Ose"/>
                                 <exclude reference="uCf-0q-MGm"/>
                                 <include reference="zEw-Oo-zYN"/>
-                                <include reference="DUf-pD-d0S"/>
-                                <exclude reference="Xht-Hh-lkX"/>
-                                <include reference="hA0-PZ-gVT"/>
-                                <exclude reference="y5U-oX-NUI"/>
-                                <exclude reference="JIb-F7-Xwn"/>
-                                <include reference="X4E-tT-EJb"/>
-                                <exclude reference="Xu0-0q-uUt"/>
-                                <include reference="ebl-kS-Vu6"/>
                                 <include reference="GeA-7Q-L5a"/>
                                 <exclude reference="hoD-8d-5dA"/>
                             </mask>
@@ -115,7 +113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="279" y="336"/>
+            <point key="canvasLocation" x="277.60000000000002" y="335.98200899550227"/>
         </scene>
     </scenes>
 </document>

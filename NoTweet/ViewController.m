@@ -61,6 +61,7 @@
 }
 
 - (void)keyboardDidShow: (NSNotification *) notif{
+    
     UIEdgeInsets insets = self.tweetText.contentInset;
     insets.bottom += [notif.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue].size.height;
     self.tweetText.contentInset = insets;
@@ -101,7 +102,7 @@
     int charCountLinks = 0;
     
     /* Replace new lines with asterick so they will be counted in the total count */
-    NSString *newText = [tweetText.text stringByReplacingOccurrencesOfString:@"\n" withString:@"*"];
+    NSString *newText = [tweetText.text stringByReplacingOccurrencesOfString:@"\n" withString:@" "];
     
     /*
      Explode entire text view into an array, using space as the delimiter.
@@ -131,7 +132,7 @@
     }
     
     /**/
-    charCount = charCountWords + charCountLinks;
+    charCount = charCountWords + charCountLinks + (int)listOfWords.count - 1;
     /*
     NSLog(@"original Count: %d", originalCount);
     NSLog(@"charCountUsernames: %d", charCountUsernames);

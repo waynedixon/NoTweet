@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UITextViewDelegate>
+@interface ViewController : UIViewController <UITextViewDelegate, UIPopoverControllerDelegate>
 
 @property (nonatomic, retain) UITextView *tweetText;
 @property (nonatomic, retain) UILabel *titleLabel;
